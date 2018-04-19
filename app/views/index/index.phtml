@@ -1,7 +1,11 @@
-<div class="page-header">
-    <h1>Congratulations!</h1>
+<?php if (isset($test)) { print_r($test); } ?>
+<div class="totals col-lg-12">
+	<div class="total col-lg-6">
+		<div class="total_currency">USD</div>
+		<div class="total_value"><?php echo $total_usd; ?></div>
+	</div>
+	<div class="total col-lg-6">
+		<div class="total_currency">EUR</div>
+		<div class="total_value"><?php echo $total_eur; ?></div>
+	</div>
 </div>
-
-<p>You're now flying with Phalcon. Great things are about to happen!</p>
-
-<p>This page is located at <code>views/index/index.phtml</code></p>
