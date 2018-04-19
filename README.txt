@@ -7,11 +7,11 @@ Démo -> http://vps241328.ovh.net/
 
 # recupérer un seul coin
 api/coinsGet
-<p>args {
+args {
   id=[0-9+]
   code=[xmr/btc etc...]
   name=[bitcoin, ethereum etc...]
-}</p>
+}
 
 # chercher plusieurs coins
 api/coinsSearch
