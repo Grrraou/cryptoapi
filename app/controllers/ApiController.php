@@ -6,18 +6,18 @@ use Phalcon\Http\Request;
 
 class ApiController extends ControllerBase
 {
-    /**
-     * Index action
-     */
-    public function indexAction()
-    {
-       $this->view->disable();
-       echo "Group Controller; IndexAction; ID $id";
-    }
+	/**
+	 * Index action
+	 */
+	public function indexAction()
+	{
+	   $this->view->disable();
+	   echo "Group Controller; IndexAction; ID $id";
+	}
 	
-    /**
-     * Fonction pour récupérer un seul coin via son id, son code ou son nom dans cet ordre de prioritée.
-     */	
+	/**
+	 * Fonction pour récupérer un seul coin via son id, son code ou son nom dans cet ordre de prioritée.
+	 */	
 	public function coinsGetAction()
 	{
 		$api = new ApiCalls;
@@ -60,8 +60,8 @@ class ApiController extends ControllerBase
 	}
 	
 	/**
-     * Fonction de recherche des coins
-     */
+	 * Fonction de recherche des coins
+	 */
 	public function coinsSearchAction()
 	{
 		$api = new ApiCalls;
@@ -162,8 +162,8 @@ class ApiController extends ControllerBase
 	}
 	
 	/**
-     * Fonction pour récupérer un seul wallet via son id ou son nom dans cet ordre de prioritée.
-     */	
+	 * Fonction pour récupérer un seul wallet via son id ou son nom dans cet ordre de prioritée.
+	 */	
 	public function walletsGetAction()
 	{
 		$api = new ApiCalls;
@@ -200,8 +200,8 @@ class ApiController extends ControllerBase
 	}
 	
 	/**
-     * Fonction de recherche des wallets
-     */
+	 * Fonction de recherche des wallets
+	 */
 	public function walletsSearchAction()
 	{
 		$api = new ApiCalls;
@@ -294,8 +294,8 @@ class ApiController extends ControllerBase
 	}
 	
 	/**
-     * Fonction pour récupérer un seul asset via son id.
-     */	
+	 * Fonction pour récupérer un seul asset via son id.
+	 */	
 	public function assetsGetAction()
 	{
 		$api = new ApiCalls;
@@ -327,8 +327,8 @@ class ApiController extends ControllerBase
 	}
 	
 	/**
-     * Récupérer la valeur totale cumulée en fiat des assets
-     */	
+	 * Récupérer la valeur totale cumulée en fiat des assets
+	 */	
 	public function GetFiatAction()
 	{
 		$this->view->disable();
