@@ -34,15 +34,31 @@ class Coins extends \Phalcon\Mvc\Model
     public $uri;
 	
 	/**
+     *
+     * @var double
+     * @Column(column="value", type="double", length=10, nullable=false)
+     */
+    public $usd_value;
+	
+	/**
+     *
+     * @var double
+     * @Column(column="value", type="double", length=10, nullable=false)
+     */
+    public $eur_value;
+	
+	/**
 	 * Mise en forme json pour ApiController
 	 */
 	public function apiFormat($format = true)
 	{
 		$data = [
-			'id'	=> $this->id,
-			'name'	=> $this->name,
-			'code'	=> $this->code,
-			'uri' => $this->uri,
+			'id'		=> $this->id,
+			'name'		=> $this->name,
+			'code'		=> $this->code,
+			'uri' 		=> $this->uri,
+			'usd_value'	=> $this->usd_value,
+			'eur_value'	=> $this->eur_value,
 		];
 		
 		if ($format == true)
