@@ -6,12 +6,12 @@ use Phalcon\Http\Request;
 
 class AdminController extends ControllerBase
 {
-    /**
-     * Index action
-     */
-    public function indexAction()
-    {
-       $this->view->disable();
+	/**
+	 * Index action
+	 */
+	public function indexAction()
+	{
+	   $this->view->disable();
 
 		if (!$this->session->has('user'))
 		{
@@ -22,7 +22,7 @@ class AdminController extends ControllerBase
 		{
 			echo "admin";
 		}
-    }
+	}
 	
 	public function loginAction()
 	{

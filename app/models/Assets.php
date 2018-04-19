@@ -3,35 +3,35 @@
 class Assets extends \Phalcon\Mvc\Model
 {
 
-    /**
-     *
-     * @var integer
-     * @Primary
-     * @Identity
-     * @Column(column="id", type="integer", length=11, nullable=false)
-     */
-    public $id;
+	/**
+	 *
+	 * @var integer
+	 * @Primary
+	 * @Identity
+	 * @Column(column="id", type="integer", length=11, nullable=false)
+	 */
+	public $id;
 
-    /**
-     *
-     * @var double
-     * @Column(column="value", type="double", length=10, nullable=false)
-     */
-    public $value;
+	/**
+	 *
+	 * @var double
+	 * @Column(column="value", type="double", length=10, nullable=false)
+	 */
+	public $value;
 
-    /**
-     *
-     * @var integer
-     * @Column(column="coin", type="integer", length=11, nullable=false)
-     */
-    public $coin;
+	/**
+	 *
+	 * @var integer
+	 * @Column(column="coin", type="integer", length=11, nullable=false)
+	 */
+	public $coin;
 
-    /**
-     *
-     * @var integer
-     * @Column(column="wallet", type="integer", length=11, nullable=false)
-     */
-    public $wallet;
+	/**
+	 *
+	 * @var integer
+	 * @Column(column="wallet", type="integer", length=11, nullable=false)
+	 */
+	public $wallet;
 	
 	/**
 	 * Mise en forme json pour ApiController

@@ -3,7 +3,7 @@
 class ApiCalls extends \Phalcon\Mvc\Model
 {
 
-    public $request = [];
+	public $request = [];
 	
 	public function load($request)
 	{
