@@ -31,7 +31,7 @@ return new \Phalcon\Config([
         'baseUri'        => preg_replace('/public([\/\\\\])index.php$/', '', $_SERVER["PHP_SELF"]),
     ],
 	'api' => [
-		'key'				=> 'nickylarson',
+		'key'			=> 'nickylarson',
 		'maxSearchResult'	=> 500,
 	]
 ]);
