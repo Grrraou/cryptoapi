@@ -325,5 +325,29 @@ class ApiController extends ControllerBase
 		echo (!empty($asset)) ? $asset->apiFormat(true, $full) : json_encode(['error' => 'no result']);
 		
 	}
+	
+	/**
+     * Récupérer la valeur totale cumulée en fiat des assets
+     */	
+	public function GetFiatAction()
+	{
+		$this->view->disable();
+		
+		$assets = Assets::find();
+		$total_usd = 0;
+		$total_eur = 0;
+		
+		foreach ($assets as $asset)
+		{
+			$coin = Coins::findFirst([
+				'conditions' => 'id = :coin:',
+				'bind' => ['coin' => $asset->coin],
+			]);
+			$total_usd += $coin->usd_value * $asset->value;
+			$total_eur += $coin->eur_value * $asset->value;
+		}
+		
+		echo json_encode(['total_usd' => $total_usd, 'total_eur' => $total_eur]);
+	}
 
 }
