@@ -1,0 +1,67 @@
+-- MySQL dump 10.13  Distrib 5.5.58, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: cryptoapi
+-- ------------------------------------------------------
+-- Server version	5.5.58-0+deb8u1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `assets`
+--
+
+LOCK TABLES `assets` WRITE;
+/*!40000 ALTER TABLE `assets` DISABLE KEYS */;
+INSERT INTO `assets` VALUES (1,1574.145100000000000000000000000000,2,1);
+/*!40000 ALTER TABLE `assets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `coins`
+--
+
+LOCK TABLES `coins` WRITE;
+/*!40000 ALTER TABLE `coins` DISABLE KEYS */;
+INSERT INTO `coins` VALUES (1,'Bitcoin','BTC','https://bitcoin.org/img/icons/opengraph.png',8165.230000000000000000000000000000,6595.864628770000000000000000000000),(2,'Ethereum','ETH','https://courscryptomonnaies.ams3.digitaloceanspaces.com/courscryptodata/c283e5cca9e61c4042de804353db7710_ethereum.png',523.262000000000000000000000000000,422.690520338000000000000000000000),(3,'Monero','XMR','https://www.cryptosaurus.cc/ctrl/wp-content/uploads/MONERO.png',226.171000000000000000000000000000,182.700707629000000000000000000000);
+/*!40000 ALTER TABLE `coins` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'root','toor');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `wallets`
+--
+
+LOCK TABLES `wallets` WRITE;
+/*!40000 ALTER TABLE `wallets` DISABLE KEYS */;
+INSERT INTO `wallets` VALUES (1,'poloniex','https://poloniex.com/'),(2,'bittrex','http://bittrex.com/');
+/*!40000 ALTER TABLE `wallets` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-04-19  5:24:19
