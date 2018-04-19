@@ -20,7 +20,7 @@ class AdminController extends ControllerBase
 		}
 		else
 		{
-			echo "admin";
+			echo "hello " . $this->session->user->name;
 		}
 	}
 	
