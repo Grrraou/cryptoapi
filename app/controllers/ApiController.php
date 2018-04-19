@@ -20,12 +20,9 @@ class ApiController extends ControllerBase
      */	
 	public function coinsGetAction()
 	{
-		// if (empty($this->request->get('key')) && $this->request->get('key') !== $this->config->api->key)
-		// $response = new \Phalcon\Http\Response();
-		// $response->setStatusCode(403, "OK");
-		// $response->setContent("<html><head><title>403 forbiden</title></head><body>accès refusé</body></html>");
-
-		// $response->send();
+		$api = new ApiCalls;
+		$api->load($this->request);
+		$api->check(); // On vérifie la clé api
 		
 		$this->view->disable();
 		
@@ -67,6 +64,10 @@ class ApiController extends ControllerBase
      */
 	public function coinsSearchAction()
 	{
+		$api = new ApiCalls;
+		$api->load($this->request);
+		$api->check(); // On vérifie la clé api
+		
 		$this->view->disable();
 		
 		$conditions = "";
@@ -165,6 +166,10 @@ class ApiController extends ControllerBase
      */	
 	public function walletsGetAction()
 	{
+		$api = new ApiCalls;
+		$api->load($this->request);
+		$api->check(); // On vérifie la clé api
+		
 		$this->view->disable();
 		
 		$conditions = "";
@@ -199,6 +204,10 @@ class ApiController extends ControllerBase
      */
 	public function walletsSearchAction()
 	{
+		$api = new ApiCalls;
+		$api->load($this->request);
+		$api->check(); // On vérifie la clé api
+		
 		$this->view->disable();
 		
 		$conditions = "";
@@ -289,6 +298,10 @@ class ApiController extends ControllerBase
      */	
 	public function assetsGetAction()
 	{
+		$api = new ApiCalls;
+		$api->load($this->request);
+		$api->check(); // On vérifie la clé api
+		
 		$this->view->disable();
 		
 		$conditions = "";
