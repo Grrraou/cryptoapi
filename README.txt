@@ -2,6 +2,10 @@
 gestionnaires d'actifs crypto
 
 Démo -> http://vps241328.ovh.net/
+http://vps241328.ovh.net/api/coinsGet?code=btc&key=nickylarson
+http://vps241328.ovh.net/api/coinsSearch?in=1,3&id=2&id_comp=less&key=nickylarson
+http://vps241328.ovh.net/api/getFiat
+http://vps241328.ovh.net/coinmarketcap/updateAll
 
 :: API GET ::
 
